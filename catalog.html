@@ -3,108 +3,157 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Моноподы для селфи</title>
+	<link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header>
-  		<nav>
-  			<a href="#">
-  				<img src="https://via.placeholder.com/150x100" alt="logo">
-  			</a>
-  			<form>
-  				<p>
-  					Поиск по сайту
-  				</p>
-  			</form>
-  			<ul>
-  				<li>
-  					<a href="#">
-  						Валентин Петухов
-  					</a>
-  					<button type="button">
-  						Выйти
-  					</button>
-  				</li>
-  				<li>
-  					<a href="#">
-  						Сравнить
-  					</a>	
-  				</li>
-  				<li>
-  					<button type="button">
-  						Корзина
-  					</button>
-  				</li>
-  			</ul>
-  			<button type="button">
-  				Каталог товаров
-  			</button>
-  			<ul>
-  				<li>
-  					<a href="#">
-  						Доставка
-  					</a>
-  				</li>
-  				<li>
-  					<a href="#">
-  						Гарантия
-  					</a>
-  				</li>
-  				<li>
-  					<a href="#">
-  						Контакты
-  					</a>
-  				</li>
-  			</ul>
+	<header class="main-header">
+  		<nav class="main-menu">
+			<div class="main-menu-one">
+	  			<a href="#">
+	  				<img class="logo-hover" src="img/logo-device.svg" width="163px" height="35px" alt="device-logo">
+	  			</a>
+	  			<form class="search">
+	  				<label>
+	  				<img src="img/search.svg" width="16px" height="16px">
+	  				<input type="search" name="search" value="Поиск по сайту">
+	  				</label>
+	  			</form>
+	  			<ul class="main-nav">
+	  				<li>
+	  					<a href="#">
+	  						<img src="img/user.svg" width="13px" height="12px" alt="Пользователь">
+	  						Валентин Петухов
+	  					</a>
+	  					<button class="" type="button">Выйти</button>
+	  				</li>
+	  				<li>
+	  					<a href="#">
+	  						<img src="img/compare.svg" width="10px" height="10px">
+	  						Сравнить
+	  					</a>
+	  				</li>
+	  				<li>
+	  					<a href="#">
+	  						<img src="img/cart.svg" width="12px" height="12px">
+	  						Корзина
+	  					</a>
+	  				</li>
+	  			</ul>
+	  		</div>
+	  		<div class="gb main-menu-2">
+	  			<button type="button">
+	  				Каталог товаров
+	  				<img src="img/plus.svg" width="16px" height="16px">
+	  			</button>
+	  			<ul class="main-info">
+	  				<li>
+	  					<a href="#">
+	  						Доставка
+	  					</a>
+	  				</li>
+	  				<li>
+	  					<a href="#">
+	  						Гарантия
+	  					</a>
+	  				</li>
+	  				<li>
+	  					<a href="#">
+	  						Контакты
+	  					</a>
+	  				</li>
+	  			</ul>
+	  		</div>
   		</nav>
   	</header>
   	<main>
-  		<section>
+  		<section class="monopod">
   			<h1>
   				Моноподы для селфи
   			</h1>
   			<ul>
   				<li>
   					<p>Главная </p>
+  					<img src="img/nav-arrow.svg" width="4px" height="7px">
   					<p>Каталог товаров </p>
+  					<img src="img/nav-arrow.svg" width="4px" height="7px">
   					<p>Моноподы для селфи</p>
   				</li>
   			</ul>
   		</section>
-		<section>
+		<section class="option">
 			<h2>
 				Фильтр:
 			</h2>
 			<form>
+				<h2>Стоимость</h2>
+					<input type="range">
+				<h2>
+					Цвет
+				</h2>
+					<label>
+						<input type="checkbox" value="Черный">
+						Черный
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" value="Белый">
+						Белый
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" value="Синий">
+						Синий
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" value="Красный">
+						Красный
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" value="Розовый">
+						Розовый
+					</label>
+				<h2>
+					Bluetooth
+				</h2>
+					<label>
+						<input type="radio" name="bluetooth">
+						Есть
+					</label>
+					<br>
+					<label>
+						<input type="radio" name="bluetooth">
+						Нет
+					</label>
+					<br>
+					<button type="button">Показать</button>
 			</form>
-			<button type="button">
-				Показать
-			</button>
 		</section>
 		<section>
-			<h2>
-				Сортировка
-			</h2>
 			<ul>
 				<li>
+					<h2>
+						Сортировка:
+					</h2>
 					<button>
 						По цене
 					</button>	
-				</li>
-				<li>
 					<button>
 						По типу
 					</button>
-				</li>
-				<li>
 					<button>
 						По популярности
 					</button>
+					<img src="img/icon-up-dir.svg">
+					<img src="img/icon-down-dir.svg">
 				</li>
 			</ul>
 			<ul>
 				<li>
 					<a href="#">
-						<img src="https://via.placeholder.com/150x100" alt="#">
+						<img src="img/item-1-jpg.jpg" alt="#">
 						<p>
 							Любительская селфи-палка
 						</p>
@@ -115,7 +164,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="https://via.placeholder.com/150x100" alt="#">
+						<img src="img/item-2-jpg.jpg" alt="#">
 						<p>
 							Профессиональная селфи-палка 
 						</p>
@@ -126,7 +175,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="https://via.placeholder.com/150x100" alt="#">
+						<img src="img/item-3-jpg.jpg" alt="#">
 						<p>
 							Непотопляемая селфи-палка
 						</p>
@@ -137,9 +186,9 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="https://via.placeholder.com/150x100" alt="#">
+						<img src="img/item-4-jpg.jpg" alt="#">
 						<p>
-							Cелфи-палка <<Следуй за мной>>
+							Селфи-палка «Следуй за мной»
 						</p>
 					</a>
 					<p>
@@ -147,36 +196,54 @@
 					</p>
 				</li>
 			</ul>
-			<button type="button">
-				Назад
-			</button>
-			<button type="button">
-				Вперед
-			</button>
+			<ul>
+				<li>
+					<button type="button">
+						Назад
+					</button>
+					<button type="button">
+						1
+					</button>
+					<button type="button">
+						2
+					</button>
+					<button type="button">
+						3
+					</button>
+					<button type="button">
+						Вперед
+					</button>
+				</li>
+			</ul>
 		</section>
   	</main>
 	<footer>
-		<img src="https://via.placeholder.com/150x100" alt="logo">
-		<ul>
-  			<li>
-  				<p>
-  					Валентин Петухов
-  				</p>
-  				<button type="button">
-  					Выйти
-  				</button>
-  			</li>
-  			<li>
-  				<button type="button">
-  					Сравнить
-  				</button>	
-  			</li>
-  			<li>
-  				<button type="button">
-  					Корзина
-  				</button>
-  			</li>
-  		</ul>
+		<div class="footer-menu">
+	  		<a href="#">
+	  				<img class="logo-hover" src="img/logo-device.svg" width="163px" height="35px" alt="device-logo">
+	  			</a>
+	  			<ul class="main-nav">
+	  				<li>
+	  					<a href="#">
+	  						<img src="img/user.svg" width="13px" height="12px" alt="Пользователь">
+	  						Валентин Петухов
+	  					</a>
+	  					<button class="" type="button">Выйти</button>
+	  				</li>
+	  				<li>
+	  					<a href="#">
+	  						<img src="img/compare.svg" width="10px" height="10px">
+	  						Сравнить
+	  					</a>
+	  				</li>
+	  				<li>
+	  					<a href="#">
+	  						<img src="img/cart.svg" width="12px" height="12px">
+	  						Корзина
+	  					</a>
+	  				</li>
+	  			</ul>
+	  	</div>
 		<p>г. Москва, ул. Строителей, 15</p>
 		<ul>
 			<li>
@@ -194,16 +261,16 @@
 		</p>
 		<ul>
 			<li>
-				<img src="https://via.placeholder.com/150x100" alt="FB">
+				<img src="img/fb.svg" alt="FB">
 			</li>
 			<li>
-				<img src="https://via.placeholder.com/150x100" alt="IG">
+				<img src="img/instagram.svg" alt="IG">
 			</li>
 			<li>
-				<img src="https://via.placeholder.com/150x100" alt="TW">
+				<img src="img/twitter.svg" alt="TW">
 			</li>
-			<img src="https://via.placeholder.com/150x100" alt="logo htmlacademy">
 		</ul>
+		<img src="img/logo-html.svg" alt="Логотип Html Академии">
 	</footer>  	
 </body>
 </html>
