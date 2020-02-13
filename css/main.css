@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "OpenSans", "Arial", sans-serf;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul{
+	list-style: none;
+}
+
+button{
+	background: none;
+	border: none;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.33;
+ 	letter-spacing: 3.6px;
+	color: black;
+	text-transform: uppercase;
+}
+
+input{
+	border: none;
+}
+
+p{
+	font-family: OpenSans;
+  	font-size: 15px;
+  	font-weight: 300;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: 2;
+  	letter-spacing: 0.15px;
+  	text-align: left;
+  	color: #464646;
+}
+
+.gb{
+	font-family: Gilroy;
+	font-weight: 800;
+}
+
+.gl{
+	font-family: Gilroy;
+  	font-weight: 300;
+}
+
+.osl{
+	font-family: OpenSans;
+  	font-weight: 300;
+}
+
+.main-menu-2{
+	font-size: 18px;
+	line-height: 1.33;
+ 	letter-spacing: 3.6px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.product-list a:first-child{
+	display: block;
+	width: 160px;
+  	height: 160px;
+  	background-color: #f7e397;
+}
+
+.product a{
+	display: inline-block;
+	text-align: center;
+	background-color: #f0c52e;
+	width: 220px;
+	height: 8px;
+}
