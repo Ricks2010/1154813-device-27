@@ -9,8 +9,8 @@
 <body>
 	<header class="main-header">
   		<nav class="main-menu">
-			<div class="main-menu-one">
-	  			<a href="#">
+			<div class="main-menu-1">
+	  			<a href="index.html">
 	  				<img class="logo-hover" src="img/logo-device.svg" width="163px" height="35px" alt="device-logo">
 	  			</a>
 	  			<form class="search">
@@ -25,7 +25,7 @@
 	  						<img src="img/user.svg" width="13px" height="12px" alt="Пользователь">
 	  						Валентин Петухов
 	  					</a>
-	  					<button class="" type="button">Выйти</button>
+	  					<button>Выйти</button>
 	  				</li>
 	  				<li>
 	  					<a href="#">
@@ -73,11 +73,11 @@
   			</h1>
   			<ul>
   				<li>
-  					<p>Главная </p>
+  					<a href="#">Главная </a>
   					<img src="img/nav-arrow.svg" width="4px" height="7px">
-  					<p>Каталог товаров </p>
+  					<a href="#">Каталог товаров </a>
   					<img src="img/nav-arrow.svg" width="4px" height="7px">
-  					<p>Моноподы для селфи</p>
+  					<a href="#">Моноподы для селфи</a>
   				</li>
   			</ul>
   		</section>
@@ -86,11 +86,11 @@
 				Фильтр:
 			</h2>
 			<form>
-				<h2>Стоимость</h2>
+				<h3>Стоимость</h3>
 					<input type="range">
-				<h2>
+				<h3>
 					Цвет
-				</h2>
+				</h3>
 					<label>
 						<input type="checkbox" value="Черный">
 						Черный
@@ -115,9 +115,9 @@
 						<input type="checkbox" value="Розовый">
 						Розовый
 					</label>
-				<h2>
+				<h3>
 					Bluetooth
-				</h2>
+				</h3>
 					<label>
 						<input type="radio" name="bluetooth">
 						Есть
@@ -131,26 +131,30 @@
 					<button type="button">Показать</button>
 			</form>
 		</section>
-		<section>
-			<ul>
+		<section class="mod">
+			<ul class="mod-sorting">
 				<li>
 					<h2>
 						Сортировка:
 					</h2>
-					<button>
+					<button class="as-butt-1">
 						По цене
 					</button>	
-					<button>
+					<button class="as-butt-2">
 						По типу
 					</button>
-					<button>
+					<button class="as-butt-2">
 						По популярности
 					</button>
-					<img src="img/icon-up-dir.svg">
-					<img src="img/icon-down-dir.svg">
+					<button type="button">
+						<img src="img/icon-up-dir.svg">
+					</button>
+					<button type="button">
+						<img src="img/icon-down-dir.svg">
+					</button>
 				</li>
 			</ul>
-			<ul>
+			<ul class="mod-list">
 				<li>
 					<a href="#">
 						<img src="img/item-1-jpg.jpg" alt="#">
@@ -222,7 +226,7 @@
 	  		<a href="#">
 	  				<img class="logo-hover" src="img/logo-device.svg" width="163px" height="35px" alt="device-logo">
 	  			</a>
-	  			<ul class="main-nav">
+	  			<ul class="footer-nav">
 	  				<li>
 	  					<a href="#">
 	  						<img src="img/user.svg" width="13px" height="12px" alt="Пользователь">
@@ -244,33 +248,31 @@
 	  				</li>
 	  			</ul>
 	  	</div>
-		<p>г. Москва, ул. Строителей, 15</p>
-		<ul>
-			<li>
-				<p>Доставка</p>
-			</li>
-			<li>
-				<p>Гарантия</p>
-			</li>
-			<li>
-				<p>Контакты</p>
-			</li>
-		</ul>
-		<p>
-			Тел.: +7 (495) 495-95-95
-		</p>
-		<ul>
-			<li>
-				<img src="img/fb.svg" alt="FB">
-			</li>
-			<li>
-				<img src="img/instagram.svg" alt="IG">
-			</li>
-			<li>
-				<img src="img/twitter.svg" alt="TW">
-			</li>
-		</ul>
-		<img src="img/logo-html.svg" alt="Логотип Html Академии">
+	  	<div class="social">
+			<p>г. Москва, ул. Строителей, 15</p>
+			<ul>
+				<li>
+					<a href="#">Доставка</a>
+					<a href="#">Гарантия</a>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<p>
+				Тел.: +7 (495) 495-95-95
+			</p>
+			<ul>
+				<li>
+					<img src="img/fb.svg" alt="FB">
+				</li>
+				<li>
+					<img src="img/instagram.svg" alt="IG">
+				</li>
+				<li>
+					<img src="img/twitter.svg" alt="TW">
+				</li>
+			</ul>
+			<img src="img/logo-html.svg" alt="Логотип Html Академии">
+		</div>
 	</footer>  	
 </body>
 </html>
