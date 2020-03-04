@@ -18,7 +18,7 @@
   			<ul class="main-menu__user-list">
   				<li class="main-menu__user-item main-menu__user-item--searh">
 			  		<form class="main-menu__search">
-			  			<input class="main-menu__search-input" id="search" type="search" name="search" value="Поиск по сайту">
+			  			<input class="main-menu__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
 			  			<button class="main_menu__search-btn" type="submit">Найти</button>
 			  			<label class="main-menu__search-label" for="search">
 			  				<span class="visually-hidden">Поиск</span>
@@ -43,7 +43,7 @@
 	  		</ul>
   			<ul class="main-menu__list">
   				<li class="main-menu__item main-menu__item--catalog">
-  					<a href="#">Каталог товаров</a>
+  					<a class="main-menu__link main-menu__link--catalog" href="#">Каталог товаров</a>
   					<div class="main-menu__wrap">
   						<ul class="main-menu__wrap-list">
   							<li class="main-menu__item-column">
@@ -51,11 +51,11 @@
                   <a href="catalog.html">Моноподы для селфи</a>
                   <a href="#">Экшн-камеры</a>
   							</li>
-  							<li class="main-menu__wrap-column">
+  							<li class="main-menu__item-column">
   								<a href="#">Фитнес-браслеты</a>
                   <a href="#">Умные часы</a>
   							</li>
-  							<li class="main-menu__wrap-column">
+  							<li class="main-menu__item-column">
   								<a href="#">Квадрокоптеры</a>
   							</li>
   						</ul>
@@ -129,7 +129,7 @@
 				<div class="promo-product__img promo-product__img--three">
 					<img src="img/slider-3.png" alt="Квадрокоптер">
 				</div>
-				<div class="promo-slider__desc promo-product__desc--three">
+				<div class="promo-product__desc promo-product__desc--three">
 					<b>Порхает как бабочка, жалит как пчела!</b>
 	        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 	        <a class="btn" href="#">Подробнее</a>
@@ -156,12 +156,12 @@
 					</a>
 				</li>
 				<li class="main-goods__item">
-					<a class="main-goods__item-link" href="#">
+					<a class="main-goods__item-link" href="catalog.html">
 						<div class="main-goods__item-wrap main-goods__item-wrap--selfi">
 							<img src="img/popular-2.svg" width="86px" height="117px" alt="#">
 						</div>
 						<p class="main-goods__item--text">Моноподы <br> для селфи</p>
-				</a>
+					</a>
 				</li>
 				<li class="main-goods__item">
 					<a class="main-goods__item-link" href="#">
@@ -257,7 +257,7 @@
 					</a>
 				</li>
 				<li class="main-firms__item">
-					<a class="main-firms__link main-firms__link--gop" href="#">
+					<a class="main-firms__link main-firms__link--gopro" href="#">
 						<span class="visually-hidden">
 							GoPro
 						</span>
@@ -295,7 +295,7 @@
 						ЖелДорЭкспедиция
 					</li>
 				</ul>
-				<a class="btn" href="#">
+				<a class="btnn" href="#">
 					Подробнее о нас
 				</a>
 			</article>
@@ -310,7 +310,7 @@
 			<a class="main-contacts__link" href="#">
 				<img src="img/map-jpg.png" alt="Карта">
 		  </a>
-			<a class="btn" href="#">
+			<a class="btnn" href="#">
 				Напишите нам
 			</a>
 		</section>
@@ -318,24 +318,21 @@
 	<footer class="main-footer">
 		<div class="main-footer__user-block">
 	  	<a class="main-footer__logo" href="#">
-	  		<img class="main-footer__img" src="img/logo-device.svg" width="163px" height="35px" alt="device-logo">
+	  		<img class="main-footer__img" src="img/yellow-logo-device.svg" width="163px" height="35px" alt="device-logo">
 	  	</a>
 	  	<ul class="main-footer__list">
 	  		<li class="main-footer__item main-footer__item--login">
 	 				<a class="main-footer__link main-footer__link--login" href="#">
-	 					<img src="img/user.svg" width="13px" height="12px" alt="Пользователь">
 	 					Войти
 	 				</a>
 	 			</li>
   			<li class="main-footer__item main-footer__item--compare">
 	  			<a class="main-footer__link main-footer__link--compare" href="#">
-	  				<img src="img/compare.svg" width="10px" height="10px">
 	  				Сравнить
 	 				</a>
  				</li>
 	  		<li class="main-footer__item main-footer__item--cart">
 	  			<a class="main-footer__link main-footer__link--cart" href="#">
-						<img src="img/cart.svg" width="12px" height="12px">
 	  				Корзина
 	  			</a>
 	 			</li>
@@ -349,38 +346,32 @@
 			</div>
 			<ul class="main-footer__list">
 				<li class="main-footer__item">
-					<a class="main-footer__link main-footer__link--deivery" href="#">Доставка</a>
-					<a class="main-footer__link main-footer__link--warr" href="#">Гарантия</a>
-					<a class="main-footer__link main-footer__link--contact" href="#">Контакты</a>
+					<a class="main-footer__link-desc main-footer__link--deivery" href="#">Доставка</a>
+					<a class="main-footer__link-desc main-footer__link--warr" href="#">Гарантия</a>
+					<a class="main-footer__link-desc main-footer__link--contact" href="#">Контакты</a>
 				</li>
 			</ul>
 			<div class="main-footer__phone">
-				<p>
+				<a class="main-footer__number">
 					Тел.: +7 (495) 495-95-95
-				</p>
+				</a>
 			</div>
 			<div class="main-footer__links">
 				<div class="main-footer__social">
 					<ul class="main-footer__social-list">
 						<li class="main-footer__social-item main-footer__social-item--fb">
-							<a class="main-footer__social-links" href="#">
-								<span class="visually-hidden">
-									Facebook
-								</span>
+							<a class="main-footer__social-links main-footer__social-link--fb" href="#">
+								<img src="img/fb.svg" width="32px" height="32px" alt="Фейсбук">
 							</a>
 						</li>
 						<li class="main-footer__social-item main-footer__social-item--ins">
-							<a class="main-footer__social-links" href="#">
-								<span class="visually-hidden">
-									Instagram
-								</span>
+							<a class="main-footer__social-links main-footer__social-link--inst" href="#">
+								<img src="img/instagram.svg" width="32px" height="32px" alt="Инстаграм">
 							</a>
 						</li>
 						<li class="main-footer__social-item main-footer__social-item--tw">
-							<a class="main-footer__social-links" href="#">
-								<span class="visually-hidden">
-									Twitter
-								</span>
+							<a class="main-footer__social-links main-footer__social-link--tw" href="#">
+								<img src="img/twitter.svg" width="32px" height="32px" alt="Твитер">
 							</a>
 						</li>
 					</ul>
